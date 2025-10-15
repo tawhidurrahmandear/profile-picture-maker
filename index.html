@@ -1,0 +1,79 @@
+<link rel="stylesheet" type="text/css" href="profile-picture-maker.css">
+
+<!-- Profile Picture Maker -->
+<!-- developed by Tawhidur Rahman Dear, https://www.tawhidurrahmandear.com -->
+<!-- Live Preview available at https://www.devilhunter.net/p/profile-picture-maker.html -->
+
+<div class="container">
+  <p>Upload an image, adjust zoom and drag to position, generate 3 Transparent PNGs : Square, Circle, Rounded Corner at 512 × 512 ratio, and download each.</p>
+  
+<br>
+<a name="more"></a>
+
+<!-- Profile Picture Maker -->
+<!-- developed by Tawhidur Rahman Dear, https://www.tawhidurrahmandear.com -->
+<!-- Live Preview available at https://www.devilhunter.net/p/profile-picture-maker.html -->
+<!-- Released under GPL-3.0 license on Github at https://github.com/tawhidurrahmandear/profile-picture-maker -->
+
+<br>
+
+
+  <section class="profilepicture editor">
+    <div class="uploader">
+      <input id="fileInput" class="profile-picture-maker_button" type="file" accept="image/*" />
+    </div>
+
+    <div class="controls">
+      <label for="zoom">Zoom</label>
+      <input id="zoom" class="zoom-slider" type="range" min="0.2" max="3" step="0.01" value="1">
+      <br>
+      <label id="zoomVal">100%</label>
+      <button id="resetBtn" class="profile-picture-maker_button" type="button">Restart</button>
+    </div>
+
+    <div class="preview-wrap">
+      <div class="preview profilepicture">
+        <canvas id="previewCanvas" width="800" height="800" title="Drag to move (touch supported)"></canvas>
+      </div>
+    </div>
+  </section>
+  
+  <br><br>
+
+  <aside class="profilepicture outputs">
+    <div style="flex:1">
+      <div style="display:flex;gap:10px;align-items:center">
+        <button id="GenerateOutputs" class="profile-picture-maker_button" type="button" >Generate Outputs</button>
+      </div>
+    </div>
+
+    <div class="output-item">
+      <canvas id="outSquare" class="output-canvas" width="512" height="512"></canvas>
+      <div class="output-actions">
+        <div>Square</div>
+        <div style="display:flex;gap:8px"><button id="downloadSquare" class="profile-picture-maker_button" type="button">Download</button></div>
+      </div>
+    </div>
+
+    <div class="output-item">
+      <canvas id="outCircle" class="output-canvas" width="512" height="512"></canvas>
+      <div class="output-actions">
+        <div>Circle</div>
+        <div style="display:flex;gap:8px"><button id="downloadCircle" class="profile-picture-maker_button" type="button" >Download</button></div>
+      </div>
+    </div>
+
+    <div class="output-item">
+      <canvas id="outRounded" class="output-canvas" width="512" height="512"></canvas>
+      <div class="output-actions">
+        <div>Rounded</div>
+        <div style="display:flex;gap:8px"><button id="downloadRounded" class="profile-picture-maker_button" type="button" >Download</button></div>
+      </div>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #eee;margin:8px 0">
+    <div style="font-size:13px;color:#555">Output size: 512X512 Transparent PNG</div>
+  </aside>
+</div>
+
+<script src="profile-picture-maker.js"></script>
