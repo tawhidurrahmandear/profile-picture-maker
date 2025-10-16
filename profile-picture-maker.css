@@ -94,12 +94,28 @@
     justify-content: center;
   }
 
-  .output-canvas {
+  .output-canvas-square {
     width: 120px;
     height: 120px;
-    border-radius: 8px;
     background: transparent;
-    border: 1px dashed #ccc;
+    border-radius: 0px;
+    border: 2px solid #6600FF;
+  }
+  
+  .output-canvas-circle {
+    width: 120px;
+    height: 120px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #6600FF;
+  }
+  
+  .output-canvas-rounded {
+    width: 120px;
+    height: 120px;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid #6600FF;
   }
 
   .output-actions {
@@ -119,11 +135,7 @@
       width: 320px;
       height: 320px;
     }
-
-    .output-canvas {
-      width: 100px;
-      height: 100px;
-    }
+	
   }
 
 
