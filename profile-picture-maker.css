@@ -60,7 +60,7 @@
   .preview {
     width: 400px;
     height: 400px;
-    border-radius: 12px;
+	margin-top:25px;
     background: linear-gradient(180deg, #eee, #ddd);
     overflow: hidden;
     position: relative;
@@ -227,3 +227,4 @@ font-family: "Roboto Mono", "Source Code Pro", Consolas, Monaco, "Courier New", 
     font-size: 12px;
   }
 }
+
