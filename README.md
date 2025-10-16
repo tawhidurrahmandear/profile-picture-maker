@@ -1,4 +1,4 @@
-# [Profile Picture Maker ☕ App Icon Maker](https://www.devilhunter.net/p/profile-picture-maker.html) <br>
+# [Profile Picture Maker ⚡ App Icon Builder ⚡ Avatar Generator ⚡ Logo Creator](https://www.devilhunter.net/p/profile-picture-maker.html) <br>
 HTML + JavaScript + CSS <br>
 * developed by Tawhidur Rahman Dear, https://www.tawhidurrahmandear.com <br>
 * Live Preview available at https://www.devilhunter.net/p/profile-picture-maker.html <br>
